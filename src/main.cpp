@@ -56,7 +56,7 @@ struct LockFreePerformanceTestT
                 CPU_SET(i, &mask);
                 int ret = pthread_setaffinity_np(ths[i].native_handle(), sizeof(mask), &mask);
                 if (ret < 0) {
-                    std::cerr << "set thread affinity failed << std::endl;
+                    std::cerr << "set thread affinity failed" << std::endl;
                 }
                 //std::cout << "thread " << i << " = " << affmask << ", ret=" << ret << std::endl;
             #endif

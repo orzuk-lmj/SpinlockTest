@@ -19,3 +19,8 @@ target("SpinlockTest")
 
     -- add include search directories
     add_includedirs("inc", {public = true})
+
+    -- link to another library
+    if is_plat("linux") then
+        add_links("pthread", "atomic")
+    end
