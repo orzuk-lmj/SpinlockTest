@@ -6,6 +6,7 @@
 #include <thread>
 #include <mutex>
 #include <chrono>
+#include <cstring>
 #include "Node.h"
 #include "MemoryReclamationByReferenceCounting.hpp"
 #include "MemoryReclamationByHazardPointer.hpp"
