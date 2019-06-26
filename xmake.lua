@@ -15,7 +15,7 @@ target("SpinlockTest")
 
     -- add files
     add_files("src/**.cpp")
-    add_headerfiles("inc/**.h")
+    add_headerfiles("inc/**.h", "inc/**.hpp")
 
     -- add include search directories
     add_includedirs("inc", {public = true})
